@@ -11,13 +11,20 @@ namespace exercise_65
       while (true)
       {
         string input = Console.ReadLine();
+                 int result = list.Count;
+                
         if (input == "")
         {
+                    Console.WriteLine("The total is: " + result);
           break;
-        }
-        list.Add(input);
-      }
 
+        }
+        
+        list.Add(input);
+            
+              
+      }
+            
     }
   }
 }
