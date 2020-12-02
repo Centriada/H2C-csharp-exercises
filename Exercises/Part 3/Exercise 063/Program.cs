@@ -9,6 +9,7 @@ namespace exercise_63
     public static void Main(string[] args)
     {
       List<int> list = new List<int>();
+       
       while (true)
       {
         int input = Convert.ToInt32(Console.ReadLine());
@@ -16,10 +17,10 @@ namespace exercise_63
         {
           break;
         }
-
+        
         list.Add(input);
       }
-      Console.WriteLine(list[0]);
+      Console.WriteLine(list[2] + list[3]);
     }
 
   }
