@@ -15,9 +15,29 @@ namespace exercise_69
         {
           break;
         }
-        list.Add(input);
-      }
+      while (true)
+       {
+          input = Convert.ToInt32(Console.ReadLine());
+          
+            foreach (int num in list )
+            {   
+                
+                 if(num[i] <= max && num[i] >= min){ 
+                {
+              
+            
+             
+                Console.WriteLine("xyz");
+                  }  
+            }
 
+            
+                        
+                    list.Add(input);
+      
+       }
+      }
+          
     }
   }
 }
