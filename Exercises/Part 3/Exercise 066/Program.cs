@@ -20,13 +20,12 @@ namespace exercise_66
           break;
               
         list.Add(input);
-
-         Console.WriteLine(list[list.Count-1]);
-          
-         }  
         
-      }      
-      
+         }  
+         for (int i = 0; i < list.Count; i++) 
+          {Console.WriteLine(list[list.Count-1]);
+      }   }   
+     
        
            
        
