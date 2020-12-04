@@ -16,19 +16,11 @@ namespace exercise_66
                                                              
         if (input == "")
         {
-             int index = 0;
-            if (index < list.Count) 
-             {
-                            index = index +1;
-                   Console.WriteLine(list[index - 1]); 
-               
-             }  
+             
           break;
               
         list.Add(input);
-        
-            
-                       
+        Console.WriteLine(input);
          }  
         
       }      
