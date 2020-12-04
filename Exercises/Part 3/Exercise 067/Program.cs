@@ -17,7 +17,8 @@ namespace exercise_67
         }
         list.Add(input);
       }
-
+      Console.WriteLine(list[2]);
+      Console.WriteLine(list[3]);
     }
   }
 }
