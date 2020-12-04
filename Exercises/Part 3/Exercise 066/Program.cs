@@ -19,7 +19,7 @@ namespace exercise_66
          
           break;
               
-        list.Add(input);
+        list.Add(input):
         
          }  
          for (int i = 0; i < list.Count; i++) 
