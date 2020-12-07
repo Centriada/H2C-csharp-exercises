@@ -19,10 +19,22 @@ namespace exercise_79
       array[7] = 7;
 
       Console.WriteLine("Search for?");
-      int searching = Convert.ToInt32(Console.ReadLine());
+      int num = Convert.ToInt32(Console.ReadLine());
 
       // Implement the search functionality here
-
+      for (int i = 0; i < array.Length; i++)
+      {
+          if (array [i] == num)
+           {     
+               Console.WriteLine(i);
+          }
+          else if (array [i] != num)
+          {
+            Console.WriteLine("The number wasn't found.");
+            break;
+          }
+          
+      }
     }
 
   }
