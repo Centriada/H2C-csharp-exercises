@@ -17,7 +17,11 @@ namespace exercise_71
         }
         list.Add(input);
       }
-
+        Console.WriteLine("Search for?" );
+     foreach (int value in list)
+         {
+        Console.WriteLine(value);
+        }
     }
   }
 }

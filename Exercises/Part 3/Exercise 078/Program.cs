@@ -26,7 +26,11 @@ namespace exercise_78
       // Implement here
       // asking for the two indices
       // and then swapping them
-
+      Console.WriteLine("two numbers?");
+        int number1= Convert.ToInt32(Console.ReadLine());
+        int number2= Convert.ToInt32(Console.ReadLine());
+        array[3] = number1;
+        array[2] = number2;
 
       // DO NOT CHANGE THE FOLLOWING CODE!
       Console.WriteLine("");
