@@ -22,19 +22,21 @@ namespace exercise_79
       int num = Convert.ToInt32(Console.ReadLine());
 
       // Implement the search functionality here
+      bool found = false;
       for (int i = 0; i < array.Length; i++)
       {
           if (array [i] == num)
            {     
-               Console.WriteLine(i);
+               Console.WriteLine(num + " is at index " + i);
+                    found = true;
+                    break;
           }
-          else if (array [i] != num)
+      } 
+      if (!found)
           {
-            Console.WriteLine("The number wasn't found.");
-            break;
+            Console.WriteLine( num + " as not found");
+            
           }
-          
-      }
     }
 
   }
