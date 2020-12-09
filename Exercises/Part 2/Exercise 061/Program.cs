@@ -11,6 +11,7 @@ namespace exercise_61
             PrintRightTriangle(4);
             Console.WriteLine("");
             ChristmasTree(4);
+            PrintStars();
     }
 
         public static void PrintSpaces(int number)
@@ -26,12 +27,12 @@ namespace exercise_61
        
          } 
 
-        /*public static void PrintSpaces(int number)
+        public static void PrintStars(int number)
     {
               int i = 0;
          while (i < number) 
           {
-             Console.Write("");
+             Console.Write("*");
              i++;
            
           }
