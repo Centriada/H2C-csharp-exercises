@@ -13,7 +13,7 @@ namespace exercise_61
             ChristmasTree(4);
     }
 
-       public static void PrintSpaces(int number)
+        public static void PrintSpaces(int number)
         {
           
             int i = 0;
@@ -24,14 +24,23 @@ namespace exercise_61
            
           }
        
-         }
+         } 
 
-    //public static void PrintSpaces(int number)
-    //{
+        /*public static void PrintSpaces(int number)
+    {
+              int i = 0;
+         while (i < number) 
+          {
+             Console.Write("");
+             i++;
+           
+          }
+       
+    } */
 
-    //}
+    
 
-    public static void PrintRightTriangle(int size)
+     public static void PrintRightTriangle(int size)
     {
          
            for (int i = 1; i <= size; i++)
@@ -42,24 +51,35 @@ namespace exercise_61
                 }
               Console.WriteLine();
             }
-    }
+     }
+
 
     public static void ChristmasTree(int height)
     {
          for (int i = 0; i <= height; i++)
          {
               for (int j = i; j <= height - 1; j++)
-              {
-                Console.Write(" ");
+               {
+                    Console.Write(" ");
               }
               for (int k = 0; k <= i; k++)
                {
                 Console.Write("* ");
                }   
-               
-                Console.WriteLine();
-      
-          }
-          Console.ReadKey();
+              Console.WriteLine();
+          }   
+            
+           for (int i = 0; i < 2; i++)
+                {
+                
+                for (int j = 0; j < 2; j++)
+              {
+                 Console.Write(" ");
+                }
+                 Console.WriteLine("* *");
+           }
+           Console.WriteLine();
+
+     }    
   }
 }
