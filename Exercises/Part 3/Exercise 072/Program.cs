@@ -8,28 +8,32 @@ namespace exercise_72
     public static void Main(string[] args)
     {
          List<int> list = new List<int>();
+             int input;
+            
       while (true)
       {
-        int input = Convert.ToInt32(Console.ReadLine());
+        input = Convert.ToInt32(Console.ReadLine());
         if (input == 9999)
         {
           break;
         }
-          int min = 0;
-            int max = 0;
-        for (int i = 0; i < list.Count; i++)
-        {
-        if (list[i] < min)
-         {
-          min = list[i];
-          }
-        if (list[i] > max)
-         {
-          max = list[i];
-          }
-        list.Add(input);
-        }
+         list.Add(input);
       }
+          int min = list[0];
+            
+        for (int i = 0; i < list.Count; i++)
+        {     
+        
+         int num = list[i];
+        
+        if (min > num )
+         {
+          min = num;
+           
+          }
+        }
+           Console.WriteLine("Smallest number is: " + min);
+            Console.WriteLine("Found at index " + list.IndexOf(min));
     }
   }
 }
