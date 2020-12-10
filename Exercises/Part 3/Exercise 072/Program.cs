@@ -20,7 +20,7 @@ namespace exercise_72
          list.Add(input);
       }
           int min = list[0];
-            
+          int max = list[0];
         for (int i = 0; i < list.Count; i++)
         {     
         
@@ -31,9 +31,15 @@ namespace exercise_72
           min = num;
            
           }
+        if (max < num)
+          {      
+             max = num;
+          }
         }
            Console.WriteLine("Smallest number is: " + min);
-            Console.WriteLine("Found at index " + list.IndexOf(min));
+           Console.WriteLine("Found at index " + list.IndexOf(min));
+           Console.WriteLine("Biggest number is: " + max);
+           Console.WriteLine("Found at index " + list.IndexOf(max));
     }
   }
 }
