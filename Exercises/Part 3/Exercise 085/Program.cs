@@ -7,9 +7,8 @@ namespace exercise_85
   {
     public static void Main(string[] args)
     {
-
-
-    }
+         
+	}
   }
 }
 
