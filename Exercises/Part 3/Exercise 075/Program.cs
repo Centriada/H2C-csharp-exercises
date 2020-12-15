@@ -21,18 +21,17 @@ namespace exercise_75
 
     
       PrintNumbersInRange(numbers, 0, 5);
-
+        Console.WriteLine("The numbers in the range [0, 5]");
       
       PrintNumbersInRange(numbers, 3, 10);
+         Console.WriteLine("The numbers in the range [3, 10]");
     }
     public static void PrintNumbersInRange(List<int> numbers, int lowerLimit, int upperLimit)
     {
-               
-                if (lowerLimit < upperLimit){
-            Console.WriteLine("The numbers in the range [0, 5]");
-                    numbers.ForEach(Console.WriteLine);
-            Console.WriteLine("The numbers in the range [3, 10]");
-                    numbers.ForEach(Console.WriteLine);
+          foreach (int number in numbers)     
+                if (lowerLimit <= number && upperLimit >= number)
+                {
+                   Console.WriteLine(number);
                  }
           
     }
