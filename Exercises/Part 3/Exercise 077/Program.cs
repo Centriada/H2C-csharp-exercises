@@ -8,8 +8,29 @@ namespace exercise_77
     public static void Main(string[] args)
     {
       // You can try your method here if you want
-    }
+      List<string> strings = new List<string>();
 
+        strings.Add("First");
+        strings.Add("Second");
+        strings.Add("Third");
+        strings.ForEach(Console.WriteLine);
+            RemoveLast(strings);
+            RemoveLast(strings);
+            strings.ForEach(Console.WriteLine);
+           
+
+    }
+    public static void RemoveLast(List<string> strings)
+    {
+       int listLength = strings.Count;
+        if (listLength <= 0) {
+                Console.WriteLine("The array contains no more items");
+            }else{
+            strings.RemoveAt(listLength - 1);
+             }     
+       
+
+    }    
   }
 }
 
