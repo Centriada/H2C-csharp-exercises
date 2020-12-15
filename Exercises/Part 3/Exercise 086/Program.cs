@@ -7,32 +7,24 @@ namespace exercise_86
   {
     public static void Main(string[] args)
     { 
-            string userdata1 = "alex"+"sunshine";
-            string userdata2 = "emma"+"haskell";
-            Console.WriteLine("Enter username:");
-            Console.WriteLine("Enter password;");
-           String username =  Console.ReadLine();
-            String password =  Console.ReadLine();
-
-            if (userdata1 == username + password)
-              { 
-            Console.WriteLine("You have successfully logged in!");
+       while (true)
+        {
+         string input = Console.ReadLine();
+            if (input != "")
+             {
+             string[] words = input.Split(' ');
+                    for (int i =0; i < words.Length; i++)
+                {
+                   Console.WriteLine(words[i]);
+                    }
+             }
+               else
                {
-            if (userdata2 == username + password);
-                {
-            Console.WriteLine("You have successfully logged in!");  
+                break;
                 }
-                if(!(userdata2 == username + password));
-                    {
-                Console.WriteLine("Incorrect username or password!");
-                }
-                 if(!(userdata1 == username + password));
-                {
-                 Console.WriteLine("Incorrect username or password!");
-                }
-            }
-
-       }
+        
+        }    
+       
     }
   }
 }
