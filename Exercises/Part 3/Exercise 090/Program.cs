@@ -9,29 +9,33 @@ namespace exercise_90
     {
          int ages;
       int highestAge = 0;
-       int  lowestAge = 0;
+      
         Console.WriteLine("Please give name and age");
             string input;
         while (true)
         {
             input = Console.ReadLine();
-          var words = input.Split(',');
-               
-          if (input != "")
+         
+            if (input != "")
             {
-                    
-           } for (int i = 0; i < input.Length; i++)
-              {   
-                     ages = Convert.ToInt32(words[1]);
-               if (ages < lowestAge) lowestAge = ages;
-               if(ages > highestAge) highestAge = ages;
-             }    
-                Console.WriteLine("Age of the oldest is : " + highestAge);
-               if (input =="")
-                    {
+             var words = input.Split(','); 
+           
+                ages = Convert.ToInt32(words[1]);
+               
+               if(ages > highestAge) 
+               {
+                highestAge = ages;
+               }
+             } 
+           
+              else
+              {
                 break;
                   
                 }
+                 Console.WriteLine("Age of the oldest is : " + highestAge);
+               
+                    
                
         }       
              
