@@ -30,10 +30,11 @@ namespace exercise_90
            
               else
               {
-                break;
-                  
-                }
-                 Console.WriteLine("Age of the oldest is : " + highestAge);
+                Console.WriteLine("Age of the oldest is : " + highestAge);
+               break;
+               }  
+                
+                
                
                     
                
