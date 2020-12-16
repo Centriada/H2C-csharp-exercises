@@ -7,11 +7,10 @@ namespace exercise_87
   {
     public static void Main(string[] args)
     {
+             Console.WriteLine("Enter a sentance");
        while(true)
        {
-        Console.WriteLine("Enter a sentance");
-
-                string sentance = Console.ReadLine();
+               string sentance = Console.ReadLine();
 
                 var words = sentance.Split(' ');
 
@@ -21,6 +20,7 @@ namespace exercise_87
               {
                     Console.WriteLine(words[i]);     
               }
+              
           }
        } 
     }

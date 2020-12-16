@@ -8,23 +8,22 @@ namespace exercise_88
     public static void Main(string[] args)
 
     {
-           
-        while (true)
-        {
-            string input = Console.ReadLine();
-            if (input != "")
-             {
-             string[] words = input.Split(' ');
-                    foreach(string word in words)
-                    {
-                   Console.WriteLine(word.Substring(0));
-                    }
-            } 
-               else
-             {
-                break;
-                }
-         }    
+            Console.WriteLine("Enter a sentance");
+        while(true)
+       {
+               string sentance = Console.ReadLine();
+                var words = sentance.Split(' ');
+             if (sentance != "")
+              {
+                
+                    Console.WriteLine(words[0]);     
+              }
+             else
+            {
+             break;   
+             }
+          
+       } 
         
      
     }
