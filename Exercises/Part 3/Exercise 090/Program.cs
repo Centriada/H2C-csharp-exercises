@@ -26,12 +26,13 @@ namespace exercise_90
                if (ages < lowestAge) lowestAge = ages;
                if(ages > highestAge) highestAge = ages;
              }    
-              
+                Console.WriteLine("Age of the oldest is : " + highestAge);
                if (input =="")
                     {
                 break;
+                  
                 }
-               Console.WriteLine("Age of the oldest is : " + highestAge);
+               
         }       
              
                  
