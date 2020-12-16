@@ -7,30 +7,31 @@ namespace exercise_87
   {
     public static void Main(string[] args)
     {
-        while (true)
-        {
-         string input = Console.ReadLine();
+       while(true)
+       {
+        Console.WriteLine("Enter a sentance");
 
-            if (input != ""){
-            
-             string[] words = input.Split(' ');
-                foreach (string value in input)
-                     {
-                       
+                string sentance = Console.ReadLine();
 
-                 
-                   Console.WriteLine(input.Contains("av"));
-                    }
-                }
-             }
-               if (input == "")
-               {
-                break;
-                }
-        }
+                var words = sentance.Split(' ');
+
+          for(int i = 0; i < words.Length; i++)
+          {
+              if(words[i].Contains("av"))
+              {
+                    Console.WriteLine(words[i]);     
+              }
+          }
+       } 
     }
+   }               
+ }          
+    
+    
+         
+    
 
-  }
+  
 
-}
+
 
